@@ -1,8 +1,5 @@
 # Running Racktables inside Docker Container
 
-[![](https://img.shields.io/docker/pulls/ptman/racktables.svg)](https://hub.docker.com/r/ptman/racktables/)
-[![](https://img.shields.io/docker/automated/ptman/racktables.svg)](https://hub.docker.com/r/ptman/racktables/builds/)
-[![](https://images.microbadger.com/badges/image/ptman/racktables.svg)](http://microbadger.com/images/ptman/racktables)
 
 # Quickstart
 
