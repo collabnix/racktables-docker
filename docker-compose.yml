@@ -3,8 +3,11 @@ mariadb:
   environment:
   - MYSQL_DATABASE=racktables
   - MYSQL_USER=racktables
-  - MYSQL_PASSWORD=foobarbaz
-  - MYSQL_RANDOM_ROOT_PASSWORD=yes_since_this_isnt_production
+  - MYSQL_PASSWORD=password123
+  - MYSQL_RANDOM_ROOT_PASSWORD=password123
+  volumes:
+  - ./db_data:/var/lib/mysql
+
 racktables:
   build: .
   links:
@@ -13,7 +16,7 @@ racktables:
   - DBHOST=mariadb
   - DBNAME=racktables
   - DBUSER=racktables
-  - DBPASS=foobarbaz
+  - DBPASS=password123
 nginx:
   image: nginx:stable-alpine
   links:
