@@ -1,6 +1,6 @@
 # Running Racktables inside Docker Container
 
-This repository is an extension of work from original [ptman/racktables-docker](https://github.com/ptman/racktables-docker). This repository adds the below functionalities:
+This repository is an extension of work from original [ptman/racktables-docker](https://github.com/ptman/racktables-docker). This repository adds the below functionalities which goes missing in the original work:
 
 - Persistent Racktables Database
 
