@@ -1,7 +1,7 @@
 # vim: set ft=dockerfile:
 FROM alpine:3.6
 # Author with no obligation to maintain
-MAINTAINER Paul Tötterman <paul.totterman@iki.fi>
+MAINTAINER Ajeet Singh Raina ajeetraina@gmail.com>
 
 ENV DBHOST="mariadb" \
     DBNAME="racktables" \
@@ -32,8 +32,10 @@ RUN apk --no-cache add \
     -e 's|^;daemonize =.*$|daemonize = no|' \
     /etc/php5/php-fpm.conf
 
+# Adding Plugins for Racktable Reports
+
 RUN apk add git \
-   && git clone https://github.com/RackTables/racktables-contribs \
+   && git clone https://github.com/collabnix/racktables-contribs \
    && cd racktables-contribs/extensions \
    && cp -r plugins/* /opt/racktables/plugins/
 
