@@ -9,6 +9,7 @@ ENV DBHOST="mariadb" \
     DBPASS=""
 
 COPY entrypoint.sh /entrypoint.sh
+RUN apk update
 RUN apk --no-cache add \
     ca-certificates \
     curl \
