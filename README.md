@@ -28,7 +28,7 @@ Edit daemon.json file
 
 ```
 {
-"dns": ["8.8.8.8", "10.8.8.8" ]
+"dns": ["8.8.8.8"]
 }
 ```
 
@@ -46,16 +46,4 @@ Start by browsing to http://localhost/?module=installer&step=5
 
 Look at the env vars available in the `Dockerfile` and `entrypoint.sh`.
 
-## Troubleshooting
 
-In case you encounter issue related to APK and error message(being behind the corporate firewall) stating that timed-out issue, you might need to ensure that DNS entry is made for your containers
-
-```
- cat /etc/docker/daemon.json
-```
-
-```
-{
-"dns": ["8.8.8.8", "10.8.8.8" ]
-}
-```
