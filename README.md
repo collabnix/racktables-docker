@@ -3,6 +3,7 @@
 This repository is an extension of work from original [ptman/racktables-docker](https://github.com/ptman/racktables-docker). This repository adds the below functionalities:
 
 - Persistent Racktables Database
+
 - Report Generation
 
 ![My Image](https://github.com/collabnix/racktables-docker/blob/master/racktables1.png)
