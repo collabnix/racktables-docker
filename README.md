@@ -25,7 +25,14 @@ cd racktables-docker
 curl -sSL https://get.docker.com/ | sh
 ```
 
-## Configuring DNS for your Docker container
+## Install Docker Compose
+
+```
+curl -L https://github.com/docker/compose/releases/download/1.23.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+```
+
+## Configuring DNS for your Docker container(in case you're behind the firewall)
 
 Edit daemon.json file
 
@@ -42,15 +49,16 @@ Edit daemon.json file
 ## Bring up Racktables Services using Docker Compose
 
 ```
-docker-compose up
+docker-compose build
+docker-compose up -d 
 ```
 
 ## Accessing Racktables UI
 
 Start by browsing to http://localhost/?module=installer&step=5
 
-## Configuration
+# Contributor
 
-Look at the env vars available in the `Dockerfile` and `entrypoint.sh`.
+[Ajeet S Raina](ajeetraina@gmail.com)
 
 
